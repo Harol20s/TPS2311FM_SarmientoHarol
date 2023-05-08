@@ -102,3 +102,4 @@ Propiedades de POO
     herencia
     encapsulamiento
     abstracción
+relación(rombo)
