@@ -103,3 +103,5 @@ Propiedades de POO
     encapsulamiento
     abstracción
 relación(rombo)
+poner clave foranea donde se relaciona ID
+     eliminar relación m/m tabla pivote(poner ambos id)
