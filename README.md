@@ -37,7 +37,7 @@ Desarrollo de proyecto de grado para TPS 2023
     create, database table view
     create database test_db;
     use datadabe test_db;
-     
+
 ### Playground: CREATE TABLE
 ### CREATE VIEW y DDL ALTER
 ### DDL drop
