@@ -75,6 +75,9 @@ Subimos al repositorio
 Subimos un tag
 
     git push --tags
+# arreglar mysql
+    buscar en administrador de tareas mysql en detenido dar click derecho iniciar 
+
 
 ## OTROS COMANDOS
 
@@ -105,3 +108,5 @@ Propiedades de POO
 relación(rombo)
 poner clave foranea donde se relaciona ID
      eliminar relación m/m tabla pivote(poner ambos id)
+
+
