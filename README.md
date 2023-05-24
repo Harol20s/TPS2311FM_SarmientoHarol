@@ -69,6 +69,13 @@ PRIMARY KEY (`person_id`)
 
 ### Playground: CREATE TABLE
 ### CREATE VIEW y DDL ALTER
+
+CREATE VIEW v-bresil-customers AS
+SELECT customer_name;
+contact_name
+FROM customers
+WHERE country ="Brasil";
+
 ### DDL drop
 ### Playground: VIEW, ALTER y DROP en SQL
 ### DML
