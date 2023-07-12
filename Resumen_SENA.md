@@ -174,4 +174,7 @@ ALL: otorga todos los permisos menos GRANT OPTION.
   ORDER BY total DESC
   HAVING total >= 2;
 
+SELECT *
+FROM categorias
+WHERE fecha_publicacion <'2024-01-01'
 
