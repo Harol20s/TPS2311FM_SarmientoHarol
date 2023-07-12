@@ -143,5 +143,35 @@ CREATE TABLE `platziblog`.`prueba`(
 `name` VARCHAR(255) NOT NULL,
 PRIMARY KEY (`person_id`)
 );
+DDL (DATA DEFINITION LANGUAJE)
+    Comando	Descripción
+CREATE	Utilizado para crear nuevas tablas, campos e índices
+DROP	Empleado para eliminar tablas e índices
+ALTER	Utilizado para modificar las tablas agregando campos o cambiando la definición de los campos.
+
+DML (DATA MANIPULATION LANGUAJE)
+    DELETE	Elimina filas de una tabla. Consulte DELETE.    
+INSERT	Añade nuevas filas a una tabla. Consulte INSERT.
+SELECT	Recupera filas de una tabla o fila. Consulte SELECT (para recuperar filas).
+TRUNCATE	Vacía una tabla. Consulte TRUNCATE.
+UPDATE	Sustituye valores de columnas en una tabla. Consulte UPDATE.
+
+DCL (DATA CONTROL LANGUAJE)
+    USAGE: para usar un objeto específico de la base de datos.
+SELECT: para acceder a tablas o vistas.
+INSERT [ (nombre_columna) ]: Si se especifica el nombre_columna, se otorga permiso para insertar en la columna especificada. Si se omite entonces se permite insertar valores en todas las columnas.
+UPDATE [ (nombre_columna) ]: Lo mismo que INSERT para modificar.
+DELETE: para eliminar registros de una tabla o vista.
+REFERENCES [ (nombre_columna) ]: Si se especifica nombre_columna permite referirse a la columna indicada como vínculo de integridad, si se omite se aplica a todas las comunas y también a las que se añadan después.
+GRANT OPTION: permite dar permisos a otro usuario.
+ALL: otorga todos los permisos menos GRANT OPTION.
+
+ ### Estructura básica de un Query
+  SELECT city,count(*) AS total
+  FROM people
+  WHERE active = true
+  GROUP BY city
+  ORDER BY total DESC
+  HAVING total >= 2;
 
 

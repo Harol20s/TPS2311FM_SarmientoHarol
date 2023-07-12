@@ -44,29 +44,6 @@ Desarrollo de proyecto de grado para TPS 2023
     city varchar (255)
     );
 tilde invertida(alt+96)(`)
-
-CREATE TABLE `platziblog`.`people` (
-  `person_id` INT NOT NULL AUTO_INCREMENT,
-  `last_name` VARCHAR(255) NULL,
-  `first_name` VARCHAR(255) NULL,
-  `address` VARCHAR(255) NULL,
-  `city` VARCHAR(255) NULL,
-  PRIMARY KEY (`person_id`));
-
-` ' ´
-CREATE TABLE `platziblog`.`prueba` (
-  `test_id` INT NOT NULL AUTO_INCREMENT,
-  `last_name` VARCHAR(255) NULL,
-  `first_name` VARCHAR(255) NULL,
-  PRIMARY KEY (`person_id`));
-
-CREATE TABLE `platziblog`.`prueba`(
-`person_id` INT NOT NULL AUTO_INCREMENT,
-`name` VARCHAR(255) NOT NULL,
-PRIMARY KEY (`person_id`)
-);
-
-
 ### Playground: CREATE TABLE
 ### CREATE VIEW y DDL ALTER
 
@@ -89,6 +66,13 @@ WHERE country ="Brasil";
 
 ### ¿Por qué las consultas son tan importantes?
 ### Estructura básica de un Query
+  SELECT city,count(*) AS total
+  FROM people
+  WHERE active = true
+  GROUP BY city
+  ORDER BY total DESC
+  HAVING total >= 2;
+
 ### SELECT
 ### Playground: SELECT en SQL
 ### FROM y SQL JOINs
