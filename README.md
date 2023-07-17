@@ -74,8 +74,15 @@ WHERE country ="Brasil";
   HAVING total >= 2;
 
 ### SELECT
+  SELECT *
+  FROM categorias
+  WHERE fecha_publicacion <'2024-01-01';
 ### Playground: SELECT en SQL
-### FROM y SQL JOINs
+### FROM y SQL JOINS
+  Join agrupar conjuntos
+ DIFERENCIA LEFT JOIN - RIGHT JOIN
+ INNER JOIN (INTERSECCIÓN)
+  
 ### Utilizando la sentencia FROM
 ### Playground: FROM y LEFT JOIN en SQL
 ### WHERE
