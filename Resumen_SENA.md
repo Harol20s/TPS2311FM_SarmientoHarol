@@ -123,26 +123,18 @@ poner clave foranea donde se relaciona ID
     );
 tilde invertida(alt+96)(`)
 
-CREATE TABLE `platziblog`.`people` (
-  `person_id` INT NOT NULL AUTO_INCREMENT,
-  `last_name` VARCHAR(255) NULL,
-  `first_name` VARCHAR(255) NULL,
-  `address` VARCHAR(255) NULL,
-  `city` VARCHAR(255) NULL,
-  PRIMARY KEY (`person_id`));
+CREATE SCHEMA `platziblog` DEFAULT CHARACTER SET utf8 ;
+USE `platziblog` ;
+CREATE TABLE `platziblog`.`categorias` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `titulo` VARCHAR(255) NULL,
+  `fecha_publicacion` TIMESTAMP NULL,
+  `contenido` VARCHAR(3000) NULL,
+  `estatus` VARCHAR(500) ,
+   `usuario_id` INT NULL,
+   `categoria_id` INT NULL,
+  PRIMARY KEY (`id`));
 
-` ' ´
-CREATE TABLE `platziblog`.`prueba` (
-  `test_id` INT NOT NULL AUTO_INCREMENT,
-  `last_name` VARCHAR(255) NULL,
-  `first_name` VARCHAR(255) NULL,
-  PRIMARY KEY (`person_id`));
-
-CREATE TABLE `platziblog`.`prueba`(
-`person_id` INT NOT NULL AUTO_INCREMENT,
-`name` VARCHAR(255) NOT NULL,
-PRIMARY KEY (`person_id`)
-);
 DDL (DATA DEFINITION LANGUAJE)
     Comando	Descripción
 CREATE	Utilizado para crear nuevas tablas, campos e índices
@@ -176,5 +168,7 @@ ALL: otorga todos los permisos menos GRANT OPTION.
 
 SELECT *
 FROM categorias
-WHERE fecha_publicacion <'2024-01-01'
+WHERE fecha_publicacion <'2024-01-01';
 
+SELECT titulo AS encabezado, fecha_publicacion AS publicado_en, estatus AS estado
+FROM categorias;
