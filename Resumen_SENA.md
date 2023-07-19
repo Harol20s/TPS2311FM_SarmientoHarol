@@ -173,6 +173,38 @@ WHERE fecha_publicacion <'2024-01-01';
 SELECT titulo AS encabezado, fecha_publicacion AS publicado_en, estatus AS estado
 FROM categorias;
 
+-  SELECT *
+FROM usuarios
+LEFT JOIN posts ON usuarios.id = posts.usuario_id
+WHERE posts.usuarios_id IS NULL;
+
 SELECT *
-FROM usuario
-LEFT JOIN posts ON usuario_id=posts.usuario_id;
+FROM usuarios
+RIGHT JOIN posts ON usuarios.id = posts.usuario_id
+
+
+SELECT *
+FROM usuarios
+INNER JOIN posts ON usuarios.id = posts.usuario_id;
+
+SELECT *
+FROM usuarios
+LEFT JOIN posts ON usuarios.id = posts.usuario_id
+UNION
+SELECT *
+FROM usuarios
+RIGHT JOIN posts ON usuarios.id = posts.usuario_id;
+
+SELECT *
+FROM usuarios
+FULL OUTER JOIN posts ON usuarios.id = posts.usuario_id;
+
+SELECT *
+FROM usuarios
+LEFT JOIN posts ON usuarios.id = posts.usuario_id
+WHERE posts.usuario_id IS NULL
+UNION
+SELECT *
+FROM usuarios
+RIGHT JOIN posts ON usuarios.id = posts.usuario_id
+WHERE posts.usuario_id IS NULL;
