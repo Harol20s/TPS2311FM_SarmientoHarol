@@ -172,3 +172,7 @@ WHERE fecha_publicacion <'2024-01-01';
 
 SELECT titulo AS encabezado, fecha_publicacion AS publicado_en, estatus AS estado
 FROM categorias;
+
+SELECT *
+FROM usuario
+LEFT JOIN posts ON usuario_id=posts.usuario_id;
