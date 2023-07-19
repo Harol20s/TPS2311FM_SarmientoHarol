@@ -195,3 +195,32 @@ CREATE TABLE `platziblog`.`teachers` (
   INSERT INTO `platziblog`.`teachers` (`id`,`name`,`course_id`) VALUES (16,'Leomaris','350');
   INSERT INTO `platziblog`.`teachers` (`id`,`name`,`course_id`) VALUES (30,'Nico','749');
   INSERT INTO `platziblog`.`teachers` (`id`,`name`,`course_id`) VALUES (31,'Juan','750');
+  
+SELECT *
+FROM usuarios
+LEFT JOIN posts ON usuarios.id = posts.usuario_id
+WHERE posts.usuario_id IS NULL;
+
+SELECT *
+FROM usuarios
+RIGHT JOIN posts ON usuarios.id = posts.usuario_id
+WHERE posts.usuario_id IS NULL;
+
+SELECT *
+FROM usuarios
+LEFT JOIN posts ON usuarios.id = posts.usuario_id
+UNION
+SELECT *
+FROM usuarios
+RIGHT JOIN posts ON usuarios.id = posts.usuario_id;
+
+
+SELECT *
+FROM usuarios
+LEFT JOIN posts ON usuarios.id = posts.usuario_id
+WHERE posts.usuario_id IS NULL
+UNION
+SELECT *
+FROM usuarios
+RIGHT JOIN posts ON usuarios.id = posts.usuario_id
+WHERE posts.usuario_id IS NULL;
