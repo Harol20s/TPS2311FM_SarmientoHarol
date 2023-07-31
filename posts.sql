@@ -224,3 +224,22 @@ SELECT *
 FROM usuarios
 RIGHT JOIN posts ON usuarios.id = posts.usuario_id
 WHERE posts.usuario_id IS NULL;
+
+
+SELECT estatus, COUNT(*) post_quantity
+FROM posts
+GROUP BY estatus;
+
+SELECT YEAR(fecha_publicacion) AS posts_year, COUNT(*) AS posts_quantity
+FROM posts
+GROUP BY posts_year;
+
+SELECT YEAR(fecha_publicacion) AS posts_year, COUNT(*) AS posts_quantity
+FROM posts
+GROUP BY posts_year;
+
+SELECT MONTHNAME(fecha_publicacion) AS posts_month, estatus, COUNT(*) AS posts_quantity
+FROM posts
+GROUP BY estatus, posts_month
+HAVING posts_quantity > 2
+ORDER BY posts_month
