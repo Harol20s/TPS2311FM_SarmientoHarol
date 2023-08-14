@@ -54,3 +54,23 @@ FROM teacher
 LEFT JOIN courses ON teacher.id = courses.teacher_id
 GROUP BY teacher.name
 ORDER BY total_reviews DESC;
+
+
+CREATE TABLE `platziblog`.`comentarios` (
+  `id` INT AUTO_INCREMENT,
+  `cuerpo_comentario` VARCHAR(255) NULL,
+  `usuario_id` INT NULL,
+  `post_id` INT NULL,
+  PRIMARY KEY (`id`));
+  
+  INSERT INTO `platziblog`.`comentarios` (`id`,`cuerpo_comentario`,`usuario_id`,`post_id`) VALUES (1,'mariana no pago datos','1','2');
+  INSERT INTO `platziblog`.`comentarios` (`id`,`cuerpo_comentario`,`usuario_id`,`post_id`) VALUES (2,'duay no sirve para programacion','1','3');
+  INSERT INTO `platziblog`.`comentarios` (`id`,`cuerpo_comentario`,`usuario_id`,`post_id`) VALUES (3,'el profesor es muy claro con sus explicaciones','2','4');
+  
+   SELECT *
+FROM comentarios;
+
+SELECT usuario_id
+FROM comentarios
+JOIN `post_id`;
+
