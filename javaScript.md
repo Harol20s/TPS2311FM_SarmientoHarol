@@ -5,6 +5,7 @@
 # Prueba de JavaScipt
 
  variables
+    
  funciones
  condicionales
  ciclos
@@ -32,10 +33,9 @@
  lista de productos: HTML a partir de arrays
  Detalles de un producto
  Interacción entre todos los componentes
-Pull Requests; aportando código a proyectos en Github
-Feedback: conoce proyectos
+ Pull Requests; aportando código a proyectos en Github
+ Feedback: conoce proyectos
 
 # Despliegue
 
  Deploy con Github pages
- 
