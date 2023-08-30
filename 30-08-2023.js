@@ -72,3 +72,25 @@ function conseguirTipoSuscripcion(suscripcion){
     console.warn('ese tipo de suscripcion no existe')
 }
 
+const tiposDeSuscripciones = {
+    free: 'solo puedes tomar cursos gratis',
+    basic: 'puedes tomar casi todos los cursos gratis',
+    expert: 'Puedes tomar casi todos los cursos por un año',
+    expertduo: 'Puedes tomar TODOS los cursos',
+};
+tiposDeSuscripciones.free
+'solo puedes tomar cursos gratis'
+tiposDeSuscripciones['free']
+'solo puedes tomar cursos gratis'
+const ejemploSuscripcion = 'free'
+undefined
+tiposDeSuscripciones[ejemploSuscripcion]
+'solo puedes tomar cursos gratis'
+
+function conseguirTipoSuscripcion(suscripcion) {
+    if (tiposDeSuscripciones[suscripcion]) {
+    console.log(tiposDeSuscripciones[suscripcion]);
+    return;
+}
+console.warn('ese tipo de suscripcion no existe')
+}

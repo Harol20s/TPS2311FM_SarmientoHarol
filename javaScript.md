@@ -114,3 +114,10 @@ function conseguirTipoSuscripcion(suscripcion){
     console.warn('ese tipo de suscripcion no existe')
 }
 operador logico OR (||)
+
+const tiposDeSuscripciones = {
+    free: 'solo puedes tomar cursos gratis',
+    basic: 'puedes tomar casi todos los cursos gratis',
+    expert: 'Puedes tomar casi todos los cursos por un año',
+    expertduo: 'Puedes tomar TODOS los cursos',
+};
