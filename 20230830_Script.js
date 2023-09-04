@@ -23,4 +23,6 @@ h1.innerText = 'patito <br> brr';
 h1.classList.add('azul');
 h1.classList.remove('azul');
 
+input.value = 'C.C';
+
 
