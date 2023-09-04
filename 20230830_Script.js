@@ -17,6 +17,10 @@ console.log({
 
 h1.innerHTML = 'patito <br> brr';
 h1.innerText = 'patito <br> brr';
-console.log(h1.getAttribute('class'));
-h1.setAttribute('class', 'rojo');
+//console.log(h1.getAttribute('class'));
+//h1.setAttribute('class', 'rojo');
+
+h1.classList.add('azul');
+h1.classList.remove('azul');
+
 
