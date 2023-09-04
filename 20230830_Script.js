@@ -17,6 +17,6 @@ console.log({
 
 h1.innerHTML = 'patito <br> brr';
 h1.innerText = 'patito <br> brr';
-console.log(h1.getAttribute('pantalla'));
-h1.setAttribute('pantalla', 'rojo');
+console.log(h1.getAttribute('class'));
+h1.setAttribute('class', 'rojo');
 
