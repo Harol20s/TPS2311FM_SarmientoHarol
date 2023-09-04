@@ -5,6 +5,8 @@ const parrafito = document.querySelector('parrafito');
 const pid = document.querySelector('pid');
 const input = document.querySelector('input');
 
+console.log(input.value)
+
 console.log({
     h1,
     p,
@@ -13,4 +15,4 @@ console.log({
     input,
 })
 
-console.log(input.value)
+h1.innerHTML = 'patito <br> brr';
