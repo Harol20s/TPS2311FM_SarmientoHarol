@@ -16,3 +16,4 @@ console.log({
 })
 
 h1.innerHTML = 'patito <br> brr';
+h1.innerText = 'patito <br> brr';
