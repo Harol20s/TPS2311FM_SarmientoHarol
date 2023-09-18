@@ -18,7 +18,7 @@ app.use (express.urlencoded ({ extended: true}));
 app.get('/:name/:id', (req, res) =>{
     const {name,id} = req.params;
 
-    res.send(` ${name}:${id}`);
+    res.send(` ${name}:${id} hola`);
 });
 
 app.post('/', (req, res) =>{
