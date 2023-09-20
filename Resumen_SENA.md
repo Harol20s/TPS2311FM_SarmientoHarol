@@ -84,7 +84,8 @@ Subimos un tag
 Busca los cambios nuevos y actualiza el repositorio
 
     git pull origin <nameBranch>
-
+     git config --global --replace-all user.name (remplazar nombre e email)
+a
 tipos
     relacionales_no relacionales  
 Servicios
