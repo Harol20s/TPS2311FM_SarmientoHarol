@@ -84,7 +84,7 @@ Subimos un tag
 Busca los cambios nuevos y actualiza el repositorio
 
     git pull origin <nameBranch>
-
+a
 tipos
     relacionales_no relacionales  
 Servicios
