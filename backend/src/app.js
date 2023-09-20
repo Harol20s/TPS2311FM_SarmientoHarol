@@ -1,7 +1,3 @@
-const express = require('express');
-const mysql2 = require('mysql2');
-
-const app = express();
 
 const harol = {
     apodo: 'h',
@@ -37,12 +33,6 @@ app.delete('/', (req, res) =>{
 
 //db
 
-const connection = mysql2.createConnection ({
-host: 'localhost',
-user: 'root',
-password: 'toor',
-database: 'tutorial',
-});
 
 connection.connect((err)=>{
     if(err) throw err;
