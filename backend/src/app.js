@@ -12,25 +12,6 @@ const {apodo, edad  } = harol;
 app.use (express.json());
 app.use (express.urlencoded ({ extended: true}));
 
-app.get('/:name/:id', (req, res) =>{
-    const {name,id} = req.params;
-
-    res.send(` ${name}:${id} hola`);
-});
-
-app.post('/', (req, res) =>{
-    const {email, password} = req.body;
-    res.send(`${email}:${password}`);
-});
-
-app.put('/', (req, res) =>{
-    res.send('Peticion PUT');
-});
-
-app.delete('/', (req, res) =>{
-    res.send('Peticion DELETE');
-});
-
 //db
 
 
